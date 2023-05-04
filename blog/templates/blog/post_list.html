@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>post_list</title>
+    <link rel = "stylesheet" href="/Users/andrej/PycharmProjects/сайт туризм/blog/templates/blog/css.css">
+</head>
+<body>
+    <div>
+            <div style="text-align: left; border: 1px solid #ccc">
+                <h3> Отдых в России </h3>
+                {% for i in post %}
+                        <div>{{i.na}}</div>
+                        <div>{{i.name}}</div>
+                        <div>{{i.nam}}</div>
+                        <p> </p>
+                {% endfor %}
+            </div>
+    </div>
+    <div style=" text-align: center; color: #66ff99; ">
+        <h3 style=" color: #cc00cc; "> Отдых ближнее зарубежбе </h3>
+        {% for i in post_3 %}
+                <div>{{i.na}}</div>
+                <div>{{i.name}}</div>
+                <div>{{i.nam}}</div>
+            <p> </p>
+    {% endfor %}
+    </div>
+
+    <div style="text-align: right; ">
+        <h3> Отдых за границей </h3>
+        {% for i in post_2 %}
+                <div>{{i.na}}</div>i
+                <div>{{i.name}}</div>
+                <div>{{i.nam}}</div>
+                <p> </p>
+        {% endfor %}
+    </div>
+
+
+</div>
+</body>
+</html>

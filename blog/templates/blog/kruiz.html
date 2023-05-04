@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>kruiz</title>
+</head>
+<body>
+<p>авиатур</p>
+<p>жд</p>
+<p>поезда (при переходе на ссылки будет открываться тот или иной вид перемещения)</p>
+
+<div style="text-align: left; border: 1px solid #ccc">
+        <h3> жд </h3>
+        {% for i in post %}
+                <div>{{i.nam}}</div>
+                <div>{{i.kategoria}}</div>
+                <div>{{i.na}}</div>
+                <div>{{i.data}}</div>
+                <p> </p>
+        {% endfor %}
+    </div>
+</body>
+</html>
